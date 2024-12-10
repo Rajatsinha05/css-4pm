@@ -1,0 +1,44 @@
+#parent-box {
+    border: 2px solid red;
+    display: grid;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #parent-box {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    #parent-box {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width:1440px) {
+    #parent-box {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+}
+
+@media (min-width: 1445px) {
+    #parent-box {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+
+}
